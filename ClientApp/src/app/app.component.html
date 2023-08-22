@@ -1,0 +1,612 @@
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-aitrios">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars" style="color:#ffffff;font-size:1.2rem"></i></a>
+      </li>
+    </ul>
+    <img src="assets/images/console.svg" alt="Console Logo">
+  </nav>
+  <!-- /.navbar -->
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar main-sidebar-aitrios">
+    <!-- Brand Logo -->
+    <div class="brand-image-div">
+      <img src="assets/images/aitrios.svg" alt="AITRIOS Logo" class="brand-image">
+      <span class="brand-text">
+        <img src="assets/images/aitrios-letter.svg" alt="AITRIOS Logo">
+      </span>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar sidebar-aitrios">
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false" style="border-bottom:1px #d3d3d3">
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <img class="nav-icon nav-icon-aitrios" src="assets/images/icon1.svg" alt="x">
+              <p>
+                <span style="width:176px">
+                  Edge Software Deployment
+                </span>
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../../index.html" class="nav-link nav-link-child">
+                  <p>Software Manage</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../../index2.html" class="nav-link nav-link-child">
+                  <p>Status</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../../index3.html" class="nav-link nav-link-child">
+                  <p>Verification</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="dropdown-divider"></div>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 hub-title-30px">Edge Software Deployment</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title card-label-25px">
+                  Receipe Selection
+                </div>
+                <div class="card-header-14px">Select software components and target device(s) for deployment</div>
+              </div>
+              
+              <!-- /.card-header -->
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <div class="card-title card-label-25px" style="margin-right:4em;"><img class="header-icon" src="assets/images/icon7.svg" alt="Deploying">Firmware</div>
+                        <!-- card tools -->
+                        <div class="card-tools">
+                          <button type="button" class="btn btn-tool btn-card-tools-icon" data-card-widget="collapse">
+                            <i class="fas fa-chevron-down"></i>
+                          </button>
+                        </div>
+                        <!-- /.card-tools -->
+                        <div class="card-header-14px">Select one ore more device firmware(s) to deploy</div>
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <button type="button" class="btn btn-primary btn-274px" data-toggle="modal" data-target="#modal-select-firmware">Select</button>
+                          <button type="button" class="btn btn-block btn-primary btn-274px ml-1" style="vertical-align:baseline">Enroll Firmware</button>
+                        </div>
+                        <div class="row mt-19">
+                          <div class="col-md-4 col-sm-4 col-aitrios-4">
+                            <div class="card-label-18px">
+                              Device
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-aitrios-4">
+                            <div class="card-label-18px">
+                              Sensor
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-aitrios-4">
+                            <div class="card-label-18px">
+                              Sensor Loader
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header">
+
+                        <div class="card-title card-label-25px" style="margin-right:4em;"><img class="header-icon" src="assets/images/icon8.svg" alt="AI Software">AI Software</div>
+                        <!-- card tools -->
+                        <div class="card-tools">
+                          <button type="button" class="btn btn-tool btn-card-tools-icon" data-card-widget="collapse">
+                            <i class="fas fa-chevron-down"></i>
+                          </button>
+                        </div>
+                        <!-- /.card-tools -->
+                        <div class="card-header-14px">Select AI Model and/or Postprocessing Application (WASM) to deploy</div>
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <button type="button" class="btn btn-primary btn-274px mb-1" data-toggle="modal" data-target="#modal-select-firmware">Select</button>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4 col-sm-4 col-aitrios-4">
+                            <div class="row card-label-18px">
+                              AI Model
+                            </div>
+                            <div class="row mt-19">
+                              <button type="button" class="btn btn-block btn-primary btn-274px" style="vertical-align:baseline">Enroll AI Model</button>
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-aitrios-4">
+                            <div class="row card-label-18px">
+                              AI Post-Processing Application
+                            </div>
+                            <div class="row mt-19">
+                              <button type="button" class="btn btn-block btn-primary btn-274px" style="vertical-align:baseline">Enroll Application</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <div class="card-title card-label-25px" style="margin-right:4em;"><img class="header-icon" width="24" height="25" src="assets/images/icon9.svg" alt="Select Device" />Devices</div>
+                          <!-- card tools -->
+                          <div class="card-tools">
+                            <button type="button" class="btn btn-tool btn-card-tools-icon" data-card-widget="collapse">
+                              <i class="fas fa-chevron-down"></i>
+                            </button>
+                          </div>
+                          <!-- /.card-tools -->
+                          <div class="card-header-14px">Select one ore more devices to deploy</div>
+                        </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <button type="button" class="btn btn-primary btn-274px">Select</button>
+                          <button type="button" class="btn btn-block btn-primary btn-274px ml-1" style="vertical-align:baseline">Provision Device</button>
+                        </div>
+                        <div class="row mt-19">
+                          <div class="col-md-12 col-sm-12 col-aitrios-12">
+                            <div class="wrapper flex-row">
+                              <div class="card-label-18px" style="margin-right:18px">
+                                Devices
+                              </div>
+                              <div class="card-label-28px">
+                                123
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!-- ./card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title card-label-25px">Deployment</h5>
+                <!-- card tools -->
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool btn-card-tools-icon" data-card-widget="collapse">
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+                <!-- /.card-tools -->
+                <div class="card-header-14px">Start deploying selected firmware and software to selected devices</div>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5 class="card-title card-label-25px">Start Deployment</h5>
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <button type="button" class="btn btn-block btn-primary btn-aitrios-3" disabled>Deploy Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5 class="card-title card-label-25px">Status</h5>
+                        <!-- card tools -->
+                        <div class="card-tools">
+                          <div class="d-flex flex-wrap justify-content-end" style="height: 24px;">
+                            <button type="button" class="btn modal-header-tool p-0 btn-small">
+                              <img src="assets/images/icon10.svg" alt="Refresh">
+                            </button>
+                            <div>
+                              <button type="button" class="btn btn-tool btn-card-tools-icon" data-card-widget="collapse">
+                                <i class="fas fa-chevron-down"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- /.card-tools -->
+                        <div class="card-header-14px">Progress and results. Click refresh button to retrieve the latest status. (no auto refresh)</div>
+
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div style="width:751px;min-width:751px;height:60px;padding:0">
+                            <div class="wrapper flex-row">
+                              <div class="card-div-status-wrapper">
+                                <div class="wrapper flex-row">
+                                  <div class="card-label-18px card-div-status-label">
+                                    Deploying
+                                  </div>
+                                  <div class="card-div-status-icon">
+                                    <img src="assets/images/icon2.svg" alt="Deploying">
+                                  </div>
+                                  <div class="card-div-status-label card-label-35px">
+                                    123
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-div-status-wrapper">
+                                <div class="wrapper flex-row">
+                                  <div class="card-label-18px card-div-status-label">
+                                    Fail
+                                  </div>
+                                  <div class="card-div-status-icon">
+                                    <img src="assets/images/icon3.svg" alt="Deploying">
+                                  </div>
+                                  <div class="card-div-status-label card-label-35px">
+                                    456
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-div-status-wrapper">
+                                <div class="wrapper flex-row">
+                                  <div class="card-label-18px card-div-status-label">
+                                    Success
+                                  </div>
+                                  <div class="card-div-status-icon">
+                                    <img src="assets/images/icon4.svg" alt="Deploying">
+                                  </div>
+                                  <div class="card-div-status-label card-label-35px">
+                                    789
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <button type="button" class="btn btn-primary btn-112px">View History</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+              </div>
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title card-label-25px">Verification</h5>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool btn-card-tools-icon" data-card-widget="collapse">
+                    <img src="assets/images/icon10.svg" alt="Deploying">
+                  </button>
+                </div>
+                <div class="card-header-14px">Perform quick test to ensure deployed devices can run AI Inference.</div>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5 class="card-title card-label-25px">Quick Test</h5>
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-12 col-sm-12 col-aitrios-12">
+                            <div class="wrapper flex-row">
+                              <div class="card-label-18px" style="margin-right:18px">
+                                Devices
+                              </div>
+                              <div class="card-label-28px">
+                                123
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 card-verify-col">
+                            <div class="row mt-1">
+                              <div class="wrapper flex-row">
+                                <div class="form-check verify-selected-device">
+                                  <input class="form-check-input" type="checkbox">
+                                  <label class="form-check-label verify-selected-device-label verify-label-16px">sid-100A50500A20130998...</label>
+                                </div>
+                                <div class="card-div-verify-icon">
+                                  <img src="assets/images/icon12.svg" width="22" height="22" alt="Success">
+                                </div>
+                                <div>
+                                  Success
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mt-1">
+                              <div class="wrapper flex-row">
+                                <div class="form-check verify-selected-device">
+                                  <input class="form-check-input" type="checkbox">
+                                  <label class="form-check-label verify-selected-device-label verify-label-16px">sid-100A50500A20130998...</label>
+                                </div>
+                                <div class="card-div-verify-icon">
+                                  <img src="assets/images/icon13.svg" width="22" height="22" alt="Failed">
+                                </div>
+                                <div>
+                                  Internal Error
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mt-1">
+                              <div class="wrapper flex-row">
+                                <div class="form-check verify-selected-device">
+                                  <input class="form-check-input" type="checkbox">
+                                  <label class="form-check-label verify-selected-device-label verify-label-16px">sid-100A50500A20130998...</label>
+                                </div>
+                                <div class="card-div-verify-icon">
+                                  <img src="assets/images/icon12.svg" width="22" height="22" alt="Success">
+                                </div>
+                                <div>
+                                  Success
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 card-verify-col">
+                            <div class="row mt-1">
+                              <div class="wrapper flex-row">
+                                <div class="form-check verify-selected-device">
+                                  <input class="form-check-input" type="checkbox">
+                                  <label class="form-check-label verify-selected-device-label verify-label-16px">sid-100A50500A20130998...</label>
+                                </div>
+                                <div class="card-div-verify-icon">
+                                  <img src="assets/images/icon12.svg" width="22" height="22" alt="Success">
+                                </div>
+                                <div>
+                                  Success
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mt-1">
+                              <div class="wrapper flex-row">
+                                <div class="form-check verify-selected-device">
+                                  <input class="form-check-input" type="checkbox">
+                                  <label class="form-check-label verify-selected-device-label verify-label-16px">sid-100A50500A20130998...</label>
+                                </div>
+                                <div class="card-div-verify-icon">
+                                  <img src="assets/images/icon13.svg" width="22" height="22" alt="Failed">
+                                </div>
+                                <div>
+                                  Internal Error
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mt-1">
+                              <div class="wrapper flex-row">
+                                <div class="form-check verify-selected-device">
+                                  <input class="form-check-input" type="checkbox">
+                                  <label class="form-check-label verify-selected-device-label verify-label-16px">sid-100A50500A20130998...</label>
+                                </div>
+                                <div class="card-div-verify-icon">
+                                  <img src="assets/images/icon12.svg" width="22" height="22" alt="Success">
+                                </div>
+                                <div>
+                                  Success
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.col -->
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                </div>
+                <!-- /.row -->
+              </div>
+              <!-- /.card-footer -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div><!--/. container-fluid -->
+
+      <div class="modal fade" id="modal-select-firmware">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content modal-select">
+            <div class="modal-header">
+              <h4 class="modal-title modal-label-16px">Select Firmware</h4>
+
+              <div class="d-flex flex-wrap justify-content-end" style="height: 24px;">
+                <button type="button" class="btn modal-header-tool p-0 btn-small">
+                  <img src="assets/images/icon10.svg" alt="Refresh">
+                </button>
+                <div>
+                  <button type="button" class="modal-header-tool btn-small" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icon11.svg" alt="Close">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="modal-body pl-8 pr-8">
+              <div class="row">
+                <div class="col-md-4 m-0 p-0">
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="modal-label-14px">Device Firmware</label>
+                      <select class="form-control modal-label-14px" (change)="listChangeHandler($event)" id="DevFw">
+                        <option></option>
+                        <option class="modal-label-14px">Firmware ver. 1</option>
+                        <option class="modal-label-14px">Firmware ver. 2</option>
+                        <option class="modal-label-14px">Firmware ver. 3</option>
+                        <option class="modal-label-14px">Firmware ver. 4</option>
+                        <option class="modal-label-14px">Firmware ver. 5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <dl class="row">
+                      <dt class="col-sm-4 modal-label-14px">Version</dt>
+                      <dd class="col-sm-8 modal-contents-14px" id="DevFwVersion"><span ng-if="DevFwVersion">{{DevFwVersion}}</span><span ng-if="!DevFwVersion">&nbsp;</span></dd>
+                      <dt class="col-sm-4 modal-label-14px">File Name</dt>
+                      <dd class="col-sm-8 modal-contents-14px" id="DevFwFileName"><span ng-if="DevFwFileName">{{DevFwFileName}}</span><span ng-if="!DevFwFileName">&nbsp;</span></dd>
+                      <dt class="col-sm-4 modal-label-14px">Firmware ID</dt>
+                      <dd class="col-sm-8 modal-contents-14px" id="DevFwId"><span ng-if="DevFwId">{{DevFwId}}</span><span ng-if="!DevFwId">&nbsp;</span></dd>
+                      <dt class="col-sm-4 modal-label-14px">Date</dt>
+                      <dd class="col-sm-8 modal-contents-14px" id="DevFwDate"><span ng-if="DevFwDate">{{DevFwDate}}</span><span ng-if="!DevFwDate">&nbsp;</span></dd>
+                      <dt class="col-sm-4 modal-label-14px">Comment</dt>
+                      <dd class="col-sm-8 modal-contents-14px" id="DevFwComment"><span ng-if="DevFwComment">{{DevFwComment}}</span><span ng-if="!DevFwComment">&nbsp;</span></dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="col-md-4 m-0 p-0">
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="modal-label-14px">Sensor Firmware</label>
+                      <select class="form-control select2 modal-label-14px" (change)="listChangeHandler($event)" id="DevSensor">
+                        <option></option>
+                        <option class="modal-label-14px">Firmware ver. 1</option>
+                        <option class="modal-label-14px">Firmware ver. 2</option>
+                        <option class="modal-label-14px">Firmware ver.3</option>
+                        <option class="modal-label-14px">Firmware ver.4</option>
+                        <option class="modal-label-14px">Firmware ver.5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <dl class="row modal-label-14px">
+                      <dt class="col-sm-4 modal-label-14px">Version</dt>
+                      <dd class="col-sm-8 modal-contents-14px" id="DevSensorVersion"><span ng-if="DevSensorVersion">{{DevSensorVersion}}</span><span ng-if="!DevSensorVersion">&nbsp;</span></dd>
+                      <dt class="col-sm-4 modal-label-14px">File Name</dt>
+                      <dd class="col-sm-8 modal-contents-14px" id="DevSensorFileName"><span ng-if="DevSensorFileName">{{DevSensorFileName}}</span><span ng-if="!DevSensorFileName">&nbsp;</span></dd>
+                      <dt class="col-sm-4 modal-label-14px">Firmware ID</dt>
+                      <dd class="col-sm-8 modal-contents-14px" id="DevSensorId"><span ng-if="DevSensorId">{{DevSensorId}}</span><span ng-if="!DevSensorId">&nbsp;</span></dd>
+                      <dt class="col-sm-4 modal-label-14px">Date</dt>
+                      <dd class="col-sm-8 modal-contents-14px" id="DevSensorDate"><span ng-if="DevSensorDate">{{DevSensorDate}}</span><span ng-if="!DevSensorDate">&nbsp;</span></dd>
+                      <dt class="col-sm-4 modal-label-14px">Comment</dt>
+                      <dd class="col-sm-8 modal-contents-14px" id="DevSensorComment"><span ng-if="DevSensorComment">{{DevSensorComment}}</span><span ng-if="!DevSensorComment">&nbsp;</span></dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="col-md-4 m-0 p-0">
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="modal-label-14px">Sensor Loader</label>
+                      <select class="form-control modal-label-14px" (change)="listChangeHandler($event)" id="DevSensorLoader">
+                        <option></option>
+                        <option class="modal-label-14px">Loader ver. 1</option>
+                        <option class="modal-label-14px">Loader ver. 2</option>
+                        <option class="modal-label-14px">Loader ver. 3</option>
+                        <option class="modal-label-14px">Loader ver. 4</option>
+                        <option class="modal-label-14px">Loader ver. 5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <dl class="row modal-label-14px">
+                      <dt class="col-sm-4 modal-label-14px">Version</dt>
+                      <dd class="col-sm-8 modal-contents-14px" id="DevSensorLoaderVersion"><span ng-if="DevSensorLoaderVersion">{{DevSensorLoaderVersion}}</span><span ng-if="!DevSensorLoaderVersion">&nbsp;</span></dd>
+                      <dt class="col-sm-4 modal-label-14px">File Name</dt>
+                      <dd class="col-sm-8 modal-contents-14px" id="DevSensorLoaderFileName"><span ng-if="DevSensorLoaderFileName">{{DevSensorLoaderFileName}}</span><span ng-if="!DevSensorLoaderFileName">&nbsp;</span></dd>
+                      <dt class="col-sm-4 modal-label-14px">Firmware ID</dt>
+                      <dd class="col-sm-8 modal-contents-14px" id="DevSensorLoaderId"><span ng-if="DevSensorLoaderId">{{DevSensorLoaderId}}</span><span ng-if="!DevSensorLoaderId">&nbsp;</span></dd>
+                      <dt class="col-sm-4 modal-label-14px">Date</dt>
+                      <dd class="col-sm-8 modal-contents-14px" id="DevSensorLoaderDate"><span ng-if="DevSensorLoaderDate">{{DevSensorLoaderDate}}</span><span ng-if="!DevSensorLoaderDate">&nbsp;</span></dd>
+                      <dt class="col-sm-4 modal-label-14px">Comment</dt>
+                      <dd class="col-sm-8 modal-contents-14px" id="DevSensorLoaderComment"><span ng-if="DevSensorLoaderComment">{{DevSensorLoaderComment}}</span><span ng-if="!DevSensorLoaderComment">&nbsp;</span></dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Select</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<router-outlet></router-outlet>

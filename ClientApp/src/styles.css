@@ -1,0 +1,480 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+
+@import url('https://fonts.cdnfonts.com/css/sst');
+
+@font-face {
+  font-family: 'SST';
+  src: url(assets/fonts/SSTJapaneseW55-Regular.woff2) format("woff2"),url(assets/fonts/SSTJapaneseW55-Regular.woff) format("woff")
+}
+
+body {
+  font-family: SST !important;
+}
+
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn {
+    min-width: 112px;
+}
+
+.div {
+    border: 1px solid red !important;
+}
+
+.btn-small {
+    min-width:12px;
+    padding:0 !important;
+    border:none !important;
+    background-color: transparent !important;
+    margin-left:6px !important;
+}
+
+.sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active {
+  background-color: #e2e2e5 !important;
+  color: #f0f0f0;
+}
+
+.sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active {
+  background-color: #e2e2e5 !important;
+  color: #f0f0f0 !important;
+}
+
+.main-sidebar {
+  background-color: #e2e2e5 !important;
+}
+
+.navbar-aitrios {
+    background-color: #3e445c !important;
+    color:#ffffff !important;
+    height:72px !important;
+    border-bottom: 0 !important;
+}
+
+.brand-image-div {
+  padding-top: 16px;
+  padding-left: 16px;
+  background-color: #3e445c !important;
+  height: 72px !important;
+}
+
+.main-sidebar-aitrios {
+  background-color: #f0f0f0 !important;
+}
+
+.sidebar-aitrios {
+  background-color: #f0f0f0 !important;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+  color:#4d4d4d !important;
+}
+
+.nav-link {
+    color: #7c7c7c !important;
+}
+
+.nav-link.active {
+  color: #4d4d4d !important;
+  background-color: #e2e2e5 !important;
+}
+
+.nav-icon-aitrios {
+    width:16px !important;
+}
+
+.nav-link-child {
+    padding-left:38px !important;
+}
+
+.card {
+    box-shadow: none !important;
+    border: 1px solid #d4d4d4  !important;
+    border-radius: 8px !important;
+    min-width: 300px !important;
+    margin-bottom: 30px !important;
+}
+
+.card-title {
+    height: 32px !important;
+    line-height: 32px !important;
+    float:none !important;
+}
+
+.card-header {
+  border-bottom: none !important;
+  padding: 24px 18px 24px 17px !important;
+}
+
+.header-icon {
+  margin-right: 4px !important;
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.card-body {
+  padding: 0 18px 24px 17px !important;
+}
+
+.btn-primary {
+  background-color: #3e455c !important;
+  border-color: #3e455c !important;
+}
+
+.btn-aitrios-1 {
+  min-width: 274px !important;
+  /*max-width: 274px !important;*/
+}
+
+.btn-aitrios-2 {
+  min-width: 112px !important;
+  max-width: 112px !important;
+}
+
+.btn-header {
+  width: 112px !important;
+  height: 32px !important;
+  font-family: SST;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 4px 2px 4px 2px !important;
+  margin-left:20px !important;
+}
+
+.card-label-2, .card-label-3, .card-label-status, .card-div-status-wrapper, .card-div-status-wrapper-icon, .card-div-status-wrapper-icon.img, card-label-status-left, card-div-float {
+  margin: auto;
+  float: left;
+  padding: 0 !important;
+}
+
+.card-label-2, .card-label-status {
+  width: 10em;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.card-label-left {
+    margin-left: 0 !important;
+}
+
+.card-label-status-left
+{
+  line-height:45px;
+  height:45px;
+  top:50%;
+}
+
+  .card-label-status-left p {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+
+.card-label-3 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 18px;
+  width: 2em;
+}
+
+.card-div-float {
+  width: 112px;
+  margin-left: auto;
+  padding: 0 !important;
+}
+
+.card-label-4 {
+  width: 112px;
+  margin-right: 0;
+  margin-left: auto;
+  padding: 0 !important;
+}
+
+.card-label-5 {
+  margin-right: 0;
+  margin-left: auto;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+
+
+
+
+.row-aitrios-4 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 20px;
+  max-width: 289px;
+}
+
+.row-aitrios-12 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 20px;
+}
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.col-aitrios-4 {
+  min-width: 274px !important;
+  border: 1px dashed red !important;
+}
+
+.col-aitrios-12 {
+  min-width: 289px !important;
+  padding-left: 0 !important;
+  border: 1px dashed red !important;
+}
+
+.modal-label-14px {
+  font-family: SST !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 20px !important;
+  letter-spacing: 0px !important;
+  text-align: left !important;
+}
+
+.modal-contents-14px {
+  font-family: SST !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  letter-spacing: 0px !important;
+  text-align: left !important;
+}
+
+.card-label-16px {
+  font-family: SST !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 22px !important;
+  letter-spacing: 0px !important;
+  text-align: left !important;
+  display: inline-block !important;
+}
+
+.card-header-14px {
+  font-family: SST !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 14px !important;
+  letter-spacing: 0px !important;
+  text-align: left !important;
+}
+
+.modal-label-16px {
+  font-family: SST !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+  letter-spacing: 0px !important;
+  text-align: left !important;
+  display: inline-block !important;
+}
+
+.card-label-18px {
+  font-family: SST !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 18px !important;
+  letter-spacing: 0px !important;
+  text-align: left !important;
+  display: inline-block !important;
+}
+
+.card-label-25px {
+  font-family: SST !important;
+  font-size: 25px !important;
+  font-weight: 400 !important;
+  line-height: 25px !important;
+  letter-spacing: 0px !important;
+  text-align: left !important;
+  display: inline-block !important;
+}
+
+.card-label-28px {
+  font-family: SST !important;
+  font-size: 28px !important;
+  font-weight: 500 !important;
+  line-height: 28px !important;
+  letter-spacing: 0px !important;
+  text-align: left !important;
+}
+
+.hub-title-30px {
+  font-family: SST !important;
+  font-size: 30px !important;
+  font-weight: 400 !important;
+  line-height: 30px !important;
+  letter-spacing: 0px !important;
+  text-align: left !important;
+}
+
+.card-label-35px {
+  font-family: SST !important;
+  font-size: 35px !important;
+  font-weight: 400 !important;
+  line-height: 35px !important;
+  letter-spacing: 0px !important;
+  text-align: left !important;
+}
+
+.btn {
+  background: #3E455C;
+}
+
+.btn-112px {
+  width: 112px !important;
+  height: 32px !important;
+  border-radius: 8px !important;
+  font-family: SST !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+  letter-spacing: 0px;
+  text-align: center !important;
+  padding: 3px 2px 3px 2px !important;
+}
+
+.btn-274px {
+  width: 274px !important;
+  height: 32px !important;
+  border-radius: 8px !important;
+  font-family: SST !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 16px !important;
+  letter-spacing: 0px;
+  text-align: center !important;
+}
+
+.btn-card-tools-icon {
+  background-color: transparent !important;
+  min-width: 50px !important;
+}
+
+.mt-19 {
+  margin-top: 19px !important;
+}
+
+.mt-24 {
+    margin-top: 24px !important;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.pl-8 {
+    padding-left: 8px !important;
+}
+
+.pr-8 {
+  padding-right: 8px !important;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  -webkit-align-items: center;
+  /*text-align:center;*/
+}
+
+.card-div-status-wrapper, .card-div-status-icon, .card-div-status-label {
+  height: 60px !important;
+  line-height: 60px !important;
+}
+
+.card-div-status-wrapper {
+  background-color: #f0f0f0 !important;
+  width: 237px;
+  min-width: 237px;
+  height: 60px;
+  border: 1px;
+  border-radius: 6px !important;
+  padding: 0 12.5px !important;
+}
+
+.card-div-status-label {
+    align-items: center;
+    display: inline-block;
+    vertical-align: middle;
+    width:115px !important;
+  }
+
+.card-div-status-icon {
+  width: 45px;
+}
+
+  .card-div-status-icon img {
+    display: inline-block;
+  }
+
+.modal-select {
+    min-height:630px !important;
+}
+
+.modal-header-tool {
+    /*padding:12px !important;*/
+    display:flow;
+    flex-flow:column;
+}
+
+.verify-selected-device {
+  margin-bottom: 0 !important;
+}
+
+.verify-selected-device-label {
+  background: #F0F0F0;
+  border-radius: 6px;
+  min-width: 259px;
+  padding: 4px 0px;
+  margin: 2px 0px;
+}
+
+.card-div-verify-icon {
+  max-width: 24px !important;
+  max-height: 24px !important;
+  width: 24px;
+  height: 24px;
+  margin-left: 6px;
+  margin-right: 3px;
+}
+
+.verify-label-16px {
+  font-family: SST;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.card-verify-col {
+    min-width:532px;
+}
