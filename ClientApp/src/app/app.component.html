@@ -107,7 +107,7 @@
                       </div>
                       <div class="card-body">
                         <div class="row">
-                          <button type="button" class="btn btn-primary btn-274px" data-toggle="modal" data-target="#modal-select-firmware">Select</button>
+                          <button type="button" class="btn btn-primary btn-274px btn-working" data-toggle="modal" data-target="#modal-select-firmware">Select</button>
                           <button type="button" class="btn btn-block btn-primary btn-274px ml-1" style="vertical-align:baseline">Enroll Firmware</button>
                         </div>
                         <div class="row mt-19">
@@ -297,7 +297,7 @@
                               <div class="card-div-status-wrapper">
                                 <div class="wrapper flex-row">
                                   <div class="card-label-18px card-div-status-label">
-                                    Fail
+                                    Failed
                                   </div>
                                   <div class="card-div-status-icon">
                                     <img src="assets/images/icon3.svg" alt="Deploying">
@@ -340,13 +340,13 @@
         </div>
         <!-- /.row -->
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12" id="div-overlay-container">
             <div class="card">
               <div class="card-header">
-                <h5 class="card-title card-label-25px">Verification</h5>
+                <h5 class="card-title card-label-25px">Verification <span style="color:red">(hover mouse to see progress overlay)</span></h5>
                 <div class="card-tools">
                   <button type="button" class="btn btn-tool btn-card-tools-icon" data-card-widget="collapse">
-                    <img src="assets/images/icon10.svg" alt="Deploying">
+                    <img src="assets/images/icon10.svg" alt="collapse">
                   </button>
                 </div>
                 <div class="card-header-14px">Perform quick test to ensure deployed devices can run AI Inference.</div>
@@ -470,12 +470,23 @@
               </div>
               <div class="card-footer">
                 <div class="row">
+                  <button type="button" class="btn btn-primary btn-274px">Run</button>
                 </div>
                 <!-- /.row -->
               </div>
               <!-- /.card-footer -->
+              <div class="div-card-overlay">
+                <div class="card div-overlay-progress">
+                  <div class="card-header">
+                    Preparing for quick test
+                  </div>
+                  <div class="card-body">
+                    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- /.card -->
+              <!-- /.card -->
           </div>
           <!-- /.col -->
         </div>
