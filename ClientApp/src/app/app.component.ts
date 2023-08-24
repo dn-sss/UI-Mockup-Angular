@@ -24,6 +24,16 @@ export class AppComponent {
   DevSensorLoaderDate: any;
   DevSensorLoaderComment: any;
 
+  ModelId: any;
+  model_project_name: any;
+  version_number: any;
+  iteration_name: any;
+  publish_end_date: any;
+  model_comment: any;
+
+  DevAppVersion: any;
+  DevAppStatus: any;
+  DevAppComment: any;
 
   ngOnInit() {
     //this.DevFwVersion =
@@ -82,6 +92,37 @@ export class AppComponent {
         this.DevSensorLoaderId = 'IMX500(SensorLoader)';
         this.DevSensorLoaderDate = `${Date.now().toString()}`;
         this.DevSensorLoaderComment = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
+      }
+    }
+    else if (value.target.id == 'AiModel') {
+      if (value.target.selectedIndex == 0) {
+        this.ModelId =
+          this.model_project_name =
+        this.version_number =
+        this.iteration_name =
+        this.publish_end_date =
+        this.model_comment = '';
+      }
+      else {
+        this.ModelId = `MyAI Model ${Math.floor(Math.random() * 100)}`;
+        this.model_project_name = `BaseModel-CV-Person`;
+        this.version_number = `${Math.floor(Math.random() * 100)}`;
+        this.iteration_name = `Iteration ${Math.floor(Math.random() * 100)}`;
+        this.publish_end_date = `${Date.now().toString()}`;
+        this.model_comment = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
+      }
+    }
+    else if (value.target.id == 'WASM') {
+      if (value.target.selectedIndex == 0) {
+        this.ModelId =
+          this.DevAppVersion =
+        this.DevAppStatus =
+        this.DevAppComment = '';
+      }
+      else {
+        this.DevAppVersion = `Device App ver. ${Math.floor(Math.random() * 100)}`;
+        this.DevAppStatus = `${Math.floor(Math.random() * 4)}`;
+        this.DevAppComment = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
       }
     }
   }
